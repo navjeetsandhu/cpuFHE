@@ -23,7 +23,6 @@
 #pragma once
 
 #include <cmath>
-#include "assert.h"
 #include <cstdint>
 
 namespace cufhe {

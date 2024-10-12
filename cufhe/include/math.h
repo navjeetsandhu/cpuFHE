@@ -22,7 +22,7 @@
 
 #pragma once
 
-#include <stdint.h>
+#include <cstdint>
 
 #ifndef __host__
 #define __host__
