@@ -31,8 +31,18 @@
 
 #include <cassert>
 #include <cstdio>
+#include <cstdlib>
 
 namespace cufhe {
+
+#define _assert(condition) \
+do { \
+    if (!(condition)) { \
+        fprintf(stderr, "Assertion failed: function %s, file %s, line %d.\n", __FUNCTION__, __FILE__, __LINE__); \
+        exit(EXIT_FAILURE); \
+    } \
+} while (false)
+
 
 __host__ __device__ inline
 void CuAssert__(bool expr,
@@ -40,7 +50,7 @@ void CuAssert__(bool expr,
                 const int line) {
 	if (0 == expr)
 		printf("CuAssert() failed at %s:%i\n", file, line);
-  assert(expr);
+  _assert(expr);
 }
 
 // @brief Detect failures. Works for both device and host.

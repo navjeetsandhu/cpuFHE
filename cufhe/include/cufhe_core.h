@@ -24,6 +24,7 @@
 
 #include <cmath>
 #include <cstdint>
+#include "my_assert.h"
 
 namespace cufhe {
 

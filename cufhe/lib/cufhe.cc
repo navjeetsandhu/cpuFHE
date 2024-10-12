@@ -25,6 +25,8 @@
 #include <cmath>
 #include <random>
 #include <iostream>
+#include "my_assert.h"
+
 
 namespace cufhe {
 
