@@ -143,11 +143,11 @@ void Decrypt(Ptxt& ptxt, const Ctxt& ctxt, const PriKey& pri_key);
  ******************/
 // not ready
 typedef std::string FileName;
-void WritePriKeyToFile(const PriKey& pri_key, FileName file);
-void ReadPriKeyFromFile(PriKey& pri_key, FileName file);
-void WritePubKeyToFile(const PubKey& pub_key, FileName file);
-void ReadPubKeyFromFile(PubKey& pub_key, FileName file);
-void WriteCtxtToFile(const Ctxt& ct, FileName file);
-void ReadCtxtFromFile(Ctxt& ct, FileName file);
+void WritePriKeyToFile(const PriKey& pri_key, const FileName& file);
+void ReadPriKeyFromFile(PriKey& pri_key, const FileName& file);
+void WritePubKeyToFile(const PubKey& pub_key, const FileName& file);
+void ReadPubKeyFromFile(PubKey& pub_key, const FileName& file);
+void WriteCtxtToFile(const Ctxt& ct, const FileName& file);
+void ReadCtxtFromFile(Ctxt& ct, const FileName& file);
 
 } // namespace cufhe

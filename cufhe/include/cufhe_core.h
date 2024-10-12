@@ -23,6 +23,7 @@
 #pragma once
 
 #include <cmath>
+#include "my_math.h"
 #include <cstdint>
 #include "my_assert.h"
 

@@ -41,21 +41,21 @@ void ReadStream(const DataTemplate<T>& data, std::ifstream& in) {
         data.data()[i] = stoi(value);
 }
 
-void WritePriKeyToFile(const PriKey& pri_key, FileName file) {
+void WritePriKeyToFile(const PriKey& pri_key, const FileName& file) {
   std::ofstream stream(file);
   WriteStream<Binary>(stream, *pri_key.lwe_key_);
   WriteStream<Binary>(stream, *pri_key.tlwe_key_);
   stream.close();
 }
 
-void ReadPriKeyFromFile(PriKey& pri_key, FileName file) {
+void ReadPriKeyFromFile(PriKey& pri_key, const FileName& file) {
   std::ifstream stream(file);
   ReadStream<Binary>(*pri_key.lwe_key_, stream);
   ReadStream<Binary>(*pri_key.tlwe_key_, stream);
   stream.close();
 }
 
-void WritePubKeyToFile(const PubKey& pub_key, FileName file) {
+void WritePubKeyToFile(const PubKey& pub_key, const FileName& file) {
   std::ofstream stream(file);
   WriteStream<Torus>(stream, *pub_key.bk_);
   for (int i = 0; i < pub_key.ksk_->NumLWESamples(); i ++)
@@ -63,7 +63,7 @@ void WritePubKeyToFile(const PubKey& pub_key, FileName file) {
   stream.close();
 }
 
-void ReadPubKeyFromFile(PubKey& pub_key, FileName file) {
+void ReadPubKeyFromFile(PubKey& pub_key, const FileName& file) {
   std::ifstream stream(file);
   ReadStream<Torus>(*pub_key.bk_, stream);
   for (int i = 0; i < pub_key.ksk_->NumLWESamples(); i ++)
@@ -71,13 +71,13 @@ void ReadPubKeyFromFile(PubKey& pub_key, FileName file) {
   stream.close();
 }
 
-void WriteCtxtToFile(const Ctxt& ct, FileName file) {
+void WriteCtxtToFile(const Ctxt& ct, const FileName& file) {
   std::ofstream stream(file);
   WriteStream<Torus>(stream, *ct.lwe_sample_);
   stream.close();
 }
 
-void ReadCtxtFromFile(Ctxt& ct, FileName file) {
+void ReadCtxtFromFile(Ctxt& ct, const FileName& file) {
   std::ifstream stream(file);
   ReadStream<Torus>(*ct.lwe_sample_, stream);
   stream.close();
