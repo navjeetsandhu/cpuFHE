@@ -41,8 +41,6 @@ void Xor (Ctxt& out, const Ctxt& in0, const Ctxt& in1, const PubKey& pub_key);
 void Xnor(Ctxt& out, const Ctxt& in0, const Ctxt& in1, const PubKey& pub_key);
 void Not (Ctxt& out, const Ctxt& in);
 void Copy(Ctxt& out, const Ctxt& in);
-// Not Ready...
-// void Mux(Ctxt& out, const Ctxt& in0, const Ctxt& in1, const Ctxt& in2,
-//          cudaStream_t st = 0);
+
 
 } // namespace cufhe

@@ -20,8 +20,8 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <include/cufhe.h>
-#include <include/details/allocator_cpu.h>
+#include <cufhe.h>
+#include <allocator_cpu.h>
 
 namespace cufhe {
 

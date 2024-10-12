@@ -20,10 +20,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <include/cufhe.h>
-#include <include/details/allocator_cpu.h>
-
-#include <math.h>
+#include <cufhe.h>
+#include <allocator_cpu.h>
+#include <cmath>
 #include <random>
 #include <iostream>
 

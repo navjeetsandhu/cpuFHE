@@ -21,7 +21,7 @@
  */
 
 // Include these two files for CPU computing.
-#include <include/cufhe_cpu.h>
+#include <cufhe_cpu.h>
 using namespace cufhe;
 
 #include <iostream>

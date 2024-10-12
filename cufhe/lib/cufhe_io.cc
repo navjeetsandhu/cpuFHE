@@ -20,8 +20,7 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include "../include/cufhe.h"
-#include "../include/cufhe_core.h"
+#include "cufhe.h"
 #include <fstream>
 
 namespace cufhe {

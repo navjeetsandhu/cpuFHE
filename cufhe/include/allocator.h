@@ -22,7 +22,7 @@
 
 #pragma once
 
-#include <stdlib.h>
+#include <cstdlib>
 #include <utility>
 
 namespace cufhe {

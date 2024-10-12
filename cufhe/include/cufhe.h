@@ -30,10 +30,10 @@
 #pragma once
 
 #include "cufhe_core.h"
-#include "details/allocator.h"
+#include "allocator.h"
 #include <iostream>
-#include <math.h>
-#include <time.h>
+#include <cmath>
+#include <ctime>
 
 namespace cufhe {
 

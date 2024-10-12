@@ -29,8 +29,8 @@
 #define __device__
 #endif
 
-#include <assert.h>
-#include <stdio.h>
+#include <cassert>
+#include <cstdio>
 
 namespace cufhe {
 

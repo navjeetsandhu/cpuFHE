@@ -22,9 +22,9 @@
 
 #pragma once
 
-#include "details/math.h"
-#include "details/assert.h"
-#include <stdint.h>
+#include <cmath>
+#include "assert.h"
+#include <cstdint>
 
 namespace cufhe {
 

@@ -20,16 +20,12 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <include/cufhe.h>
-#include <include/cufhe_cpu.h>
-#include <include/bootstrap_cpu.h>
+#include <cufhe.h>
+#include <cufhe_cpu.h>
+#include <bootstrap_cpu.h>
 
 namespace cufhe {
 
-//void Initialize(PubKey pub_key);
-//void And (Ctxt& out, const Ctxt& in0, const Ctxt& in1, const PubKey& pub_key);
-//void Or  (Ctxt& out, const Ctxt& in0, const Ctxt& in1, const PubKey& pub_key);
-//void Xor (Ctxt& out, const Ctxt& in0, const Ctxt& in1, const PubKey& pub_key);
 void Nand(Ctxt& out,
           const Ctxt& in0,
           const Ctxt& in1,

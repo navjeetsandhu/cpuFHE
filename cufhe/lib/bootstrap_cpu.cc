@@ -20,9 +20,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <include/bootstrap_cpu.h>
+#include <bootstrap_cpu.h>
 #include <iostream>
-#include <string.h>
+#include <cstring>
 using namespace std;
 
 namespace cufhe {
